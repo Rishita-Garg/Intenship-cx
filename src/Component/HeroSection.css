@@ -1,0 +1,286 @@
+.hero {
+  display: flex;
+  background-color: #fff1f5; /* Background color */
+  height: 500px; /* Full viewport height */
+  padding: 150px 0; /* Adjust padding as needed */
+}
+
+.hero-section {
+  flex: 1; /* Equal width */
+  background-color: #fff1f5; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+
+.hero-section2 {
+  flex: 1; /* Equal width */
+  background-color: #fff1f5; /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.hero-heading1 {
+  font-size: 70px; /* Larger text size */
+  color: black; /* Darker color */
+  text-transform: uppercase; /* All caps */
+  margin-bottom: 20px;
+  margin-top: 150px;
+  margin-left: 35px;
+}
+
+.hero-heading2 {
+  font-size: 70px; /* Larger text size */
+  color: black; /* Darker color */
+  text-transform: uppercase; /* All caps */
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+.changing-text-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr); /* Four rows */
+}
+
+.changing-text {
+  font-size: 70px; /* Smaller text size */
+  background: linear-gradient(90deg, #760cc9, #d66904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: opacity 0.3s ease; /* Smooth transition */
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+.changing-text.active {
+  opacity: 1; /* Show active text */
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 15px;
+  border: 2px solid purple;
+  border-radius: 20px;
+  width: 350px;
+}
+
+.search-button {
+  background-color: purple;
+  color: white;
+  border: none;
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #7b68ee; /* Darker purple on hover */
+}
+
+.hero-image {
+  max-width: 100%; /* Ensure image doesn't exceed container */
+  max-height: 100%; /* Ensure image doesn't exceed container */
+  margin-top: 0; /* Remove top margin */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #fff1f5;
+  margin-top: 230px;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container */
+  max-height: 100%; /* Ensure the image doesn't exceed the container */
+  background-color: transparent;  
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff1f5; /* Background color */
+    height: 500px; /* Full viewport height */
+    padding: 175px 0; /* Adjust padding as needed */
+  }
+  
+  .hero-section {
+    flex: 1; /* Equal width */
+    background-color: #fff1f5; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -450px;
+    margin-left: 30px;
+  }
+
+  .hero-section2 {
+    flex: 1; /* Equal width */
+    background-color: transparent; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-right: 50px;
+  }
+  
+  .hero-heading1 {
+    font-size: 35px; /* Larger text size */
+    color: black; /* Darker color */
+    text-transform: uppercase; /* All caps */
+    margin-bottom: 20px;
+    margin-left: 3px;
+  }
+  
+  .hero-heading2 {
+    font-size: 35px; /* Larger text size */
+    color: black; /* Darker color */
+    text-transform: uppercase; /* All caps */
+    margin-bottom: 20px;
+    margin-left: 3px;
+  }
+
+  
+  .changing-text {
+    font-size: 35px; /* Smaller text size */
+    
+    transition: opacity 0.3s ease; /* Smooth transition */
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 3px;
+
+  }
+ 
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 15px;
+    border: 2px solid purple;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    margin-left: -20px;
+  }
+  
+  .search-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+
+  
+  
+  .image-container {
+    height: 25vh; /* Full viewport height */
+    background-color:transparent;
+    margin-top: 10px;
+    transform: translate(70%,-50%);
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container */
+    max-height: 100%; /* Ensure the image doesn't exceed the container */
+    background-color: transparent;
+  }
+
+}
+
+@media (min-width:1300px) {
+
+  .hero-section2{
+    margin-top: 200px;
+  }
+  .hero-section{
+    margin-top: 200px;
+  }
+
+  .hero-heading1 {
+    font-size: 90px; /* Larger text size */
+    color: black; /* Darker color */
+    text-transform: uppercase; /* All caps */
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 35px;
+  }
+  
+  .hero-heading2 {
+    font-size: 90px; /* Larger text size */
+    color: black; /* Darker color */
+    text-transform: uppercase; /* All caps */
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+  
+  .changing-text-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); /* Four rows */
+  }
+  
+  .changing-text {
+    font-size: 90px; /* Smaller text size */
+    background: linear-gradient(90deg, #760cc9, #d66904);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    transition: opacity 0.3s ease; /* Smooth transition */
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+  
+  .changing-text.active {
+    opacity: 1; /* Show active text */
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 15px;
+    border: 2px solid purple;
+    border-radius: 20px;
+    width: 500px;
+  }
+  
+  .search-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+}

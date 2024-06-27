@@ -1,0 +1,264 @@
+
+  .loginbackground {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -900;
+    overflow: hidden;
+    height: 200px;
+    margin-top: 100px;
+  }
+  
+  .flex-flex {
+    display: flex;
+  }
+  
+  .box-root {
+    box-sizing: border-box;
+  }
+  
+  .flex-direction--column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .loginbackground-gridContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[16] [left-gutter] 1fr [end];
+    grid-template-columns: [start] 1fr [left-gutter] repeat(16, 86.6px) [left-gutter] 1fr [end];
+    -ms-grid-rows: [top] 1fr [top-gutter] (64px)[8] [bottom-gutter] 1fr [bottom];
+    grid-template-rows: [top] 1fr [top-gutter] repeat(8, 64px) [bottom-gutter] 1fr [bottom];
+    justify-content: center;
+    margin: 0 -2%;
+    transform: rotate(-12deg) skew(-12deg);
+    z-index: -900;
+    
+  }
+  
+  .box-divider--light-all-2 {
+    box-shadow: inset 0 0 0 2px #c02bcd;
+  }
+  
+  .box-background--blue {
+    background-color: #8d00c5;
+  }
+  
+  .box-background--white {
+    background-color: #ffffff;
+  }
+  
+  .box-background--blue800 {
+    background-color: #640075;
+  }
+  
+  .box-background--gray100 {
+    background-color: #eee3ed;
+  }
+  
+  .box-background--cyan200 {
+    background-color: #d483ec;
+  }
+  
+  .padding-top--64 {
+    padding-top: 64px;
+  }
+  
+  .flex-justifyContent--center {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .animationRightLeft {
+    animation: animationRightLeft 2s ease-in-out infinite;
+  }
+  
+  .animationLeftRight {
+    animation: animationLeftRight 2s ease-in-out infinite;
+  }
+  
+  .tans3s {
+    animation: animationLeftRight 3s ease-in-out infinite;
+  }
+  
+  .tans4s {
+    animation: animationLeftRight 4s ease-in-out infinite;
+  }
+  
+  @keyframes animationLeftRight {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(1000px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  @keyframes animationRightLeft {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  /* New CSS for Added Elements */
+.big-box {
+    background-color:rgba(255, 237, 252, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  
+
+.big-box h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 10px;
+}
+  
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  .input-box label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .row2{
+    margin-bottom: 10px;
+
+  }
+
+  .row2 input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #8800a7;
+    border-radius: 5px;
+    width: 350px;
+   
+  }
+  .row input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .address-box {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .address-box label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .address-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* CSS for New Elements */
+.details-box {
+    flex: 1;
+    background-color: #f0cbea;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .details-box h2 {
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+ .big-box button{
+  background-color: #a753e4;
+  width: 400px;
+  height: 50px;
+  border-radius: 9px;
+
+
+  color: aliceblue;
+  border-color:blanchedalmond;
+ }
+
+ 
+  .additional-details {
+    margin-top: 20px;
+  }
+  
+  .additional-details .row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .additional-details input[type="text"],
+  .additional-details label {
+    margin-right: 10px;
+  }
+  
+  .additional-details .insurance-options label {
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .box-root.flex-flex {
+      flex-direction: column;
+    }
+  
+    .details-box {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .row input,
+    .row2 input {
+      margin-right: 0;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .row2 input {
+      width: 100%;
+    }
+  
+    .big-box button {
+      width: 100%;
+    }
+
+    .big-box h1{
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+  }

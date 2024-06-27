@@ -1,0 +1,132 @@
+.clients-section {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url("../assets/backofclient.png");
+  background-color: #fff1f5;
+  background-size: 100% auto; /* Adjusted line */
+  background-repeat: no-repeat;
+  height: max-content;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  
+}
+
+.client:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.client img {
+  width: 100%;
+  max-width: 180px; /* Increase the logo size for mobile screens */
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  
+}
+
+.client::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: -15px;
+  top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.slick-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 0px 0; /* Adjust padding for smaller screens */
+    text-align: center;
+    margin-top: 100px;
+    height: max-content;
+    background: linear-gradient(90deg, rgba(246, 211, 246, 1), rgba(159, 118, 225, 1));
+    position: relative;
+    clip-path: polygon(
+        0 0, 
+        calc(50% - 20px) 0, 
+        calc(50% - 10px) 10px, 
+        50% 20px, 
+        calc(50% + 10px) 10px, 
+        calc(50% + 20px) 0, 
+        100% 0, 
+        100% 100%, 
+        0 100%);
+  }
+
+  .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .client:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .client img {
+    width: 200px;
+    height: 130px;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+
+  .logo-container {
+    background-color:transparent;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    margin-top: -50px;    
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .clients-section {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("../assets/backofclient.png");
+    background-color: #fff1f5;
+    background-size: 100% auto; /* Adjusted line */
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
+  .client img {
+    width: 100%;
+    max-width: 180px; /* Increase the logo size for mobile screens */
+    height: 150px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    margin-top: 50px;
+    
+  }
+ 
+
+}
+
+

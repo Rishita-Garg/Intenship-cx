@@ -1,0 +1,872 @@
+body {
+  background-color: #ffffff; /* Set the background color to white */
+}
+
+.tracking-container {
+  display: flex;
+  background-color: #ffffff;
+  height: max-content;
+  margin-bottom: 600px;
+}
+
+.timage-container {
+  flex-shrink: 0;
+  margin-top: 100px;
+  /* Add your image styling here */
+}
+.gradient-text {
+  background: linear-gradient(90deg, #760cc9, #d66904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.independent-image {
+  /* Add your image styling here */
+  width: 550px; /* Adjust the width as needed */
+  height: 550px; /* Adjust the height proportionally */
+  margin-left:75px;
+  margin-top: -50px;
+  z-index: -500;
+  background-color: transparent;
+}
+
+.ttext-container {
+  padding-left: 20px; /* Adjust as needed */
+  margin-top: 0px;
+  
+}
+
+.tadd {
+  font-family: Archivo;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 80px;
+  z-index: 500;
+  display: none;
+}
+
+.tmain-heading {
+  color: #9f05e7;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue,
+    Noto Sans, Liberation Sans, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  flex-wrap: nowrap;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  position: absolute;
+  margin-top: 30px;
+}
+
+
+.tsub-heading {
+  color: #191919;
+  font-family: Archivo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  position: absolute;
+  margin-top: 75px;
+}
+
+.tbox-container {
+  margin-top: 20px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 1px 4px 13.6px 0px rgba(0, 0, 0, 0.25);
+  height: 350px;
+  margin-top: 100px;
+  width: 425px;
+  margin-left: 45px;
+}
+
+.tbox-heading {
+  color: #2e2d2d;
+  font-family: Roboto, sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.tbox-line {
+  height: 2.5px; /* Set the height of the line */
+  background-color: #959393; /* Adjust the color */
+  margin: 20px 0; /* Adjust the margin */
+  width: 90%; /* Full width line */
+}
+
+.tbox-subheading {
+  color: #191919;
+  margin-top: 100px;
+  margin-left:0px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.tracking-input {
+  width: 360px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  padding: 20px 0;
+  border-radius: 8px;
+  border: 1px solid #959393;
+  background: #fbfbfb;
+}
+
+.track-button {
+  width: 360px; /* Adjust as needed */
+  height: 45px; /* Adjust as needed */
+  margin-bottom: 20px;
+  margin-top: 70px;
+  border-radius: 7px;
+  border: 1px solid #959393;
+  background: #9f05e7;
+  color: white;
+  font-family: Archivo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  /* Add other button styles */
+}
+.needhelp{
+  font-family: Archivo;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: -260px;
+
+}
+.error-message {
+  color: red;
+  margin-left: 125px;
+}
+
+.tracking-details {
+  margin-top: 20px;
+  color: #000;
+  margin-top: 150px;
+  margin-left: -450px;
+}
+
+.tracking-details table {
+  border-collapse: collapse;
+  margin-top: 250px;
+  width: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tracking-details table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.tracking-details table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+}
+
+.tracking-details table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tracking-details table tbody tr:hover {
+  background-color: #e7ceeb;
+}
+
+.wrapper {
+  background: #efef07;
+  width: 844px;
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.margin-area {
+  position: relative;
+  text-align: center;
+  font-family: "Trebuchet", sans-serif;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.message {
+  position: absolute;
+  height: 60px;
+  width: 170px;
+  padding: 10px;
+  margin: 0;
+  left: -8px;
+  top: 0;
+  color: #000;
+  &.message-1 {
+    top: 40px;
+    color: #000;
+  }
+  &.message-2 {
+    left: 210px;
+    top: 40px;
+  }
+  &.message-3 {
+    left: 420px;
+    color: #000;
+    top: 40px;
+  }
+  &.message-4 {
+    left: 625px;
+    top: 40px;
+  }
+}
+
+.dotone.delivered {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 65px;
+  background: rgba(159, 5, 231);
+}
+
+.dottwo.delivered {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 280px;
+  background: rgba(159, 5, 231);
+}
+
+.dotthree.delivered {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 490px;
+  background: rgba(159, 5, 231);
+}
+
+.dotfour.delivered {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 700px;
+  background: rgba(159, 5, 231);
+}
+
+.progress-barfirst.delivered {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 10%;
+  background: rgba(159, 5, 231);
+}
+
+.progress-barsecond.delivered {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 37%;
+  background: rgba(159, 5, 231);
+}
+
+.progress-barthird.delivered {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 64%;
+  background: rgba(159, 5, 231);
+}
+
+.dotone.can {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 65px;
+  background: #bbb;
+}
+
+.dottwo.can {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 280px;
+  background: #bbb;
+}
+
+.dotthree.can {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 490px;
+  background: #bbb;
+}
+
+.dotfour.can {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 700px;
+  background: #bbb;
+}
+
+.progress-barfirst.can {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 10%;
+  background: #bbb;
+}
+
+.progress-barsecond.can {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 37%;
+  background: #bbb;
+}
+
+.progress-barthird.can {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 64%;
+  background: #bbb;
+}
+
+.dotone.out-of-delivery {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 65px;
+  background: rgba(159, 5, 231);
+}
+
+.dottwo.out-of-delivery {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 280px;
+  background: rgba(159, 5, 231);
+}
+
+.dotthree.out-of-delivery {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 490px;
+  background: rgba(159, 5, 231);
+}
+
+.dotfour.out-of-delivery {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 700px;
+  background: #bbb;
+}
+
+.progress-barfirst.out-of-delivery {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 10%;
+  background: rgba(159, 5, 231);
+}
+
+.progress-barsecond.out-of-delivery {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 37%;
+  background: rgba(159, 5, 231);
+}
+
+.progress-barthird.out-of-delivery {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 64%;
+  background: #bbb;
+}
+
+.dotone.left-origin {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 65px;
+  background: rgba(159, 5, 231);
+}
+
+.dottwo.left-origin {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 280px;
+  background: rgba(159, 5, 231);
+}
+
+.dotthree.left-origin {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 490px;
+  background: #bbb;
+}
+
+.dotfour.left-origin {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 700px;
+  background: #bbb;
+}
+
+.progress-barfirst.left-origin {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 10%;
+  background: rgba(159, 5, 231);
+}
+
+.progress-barsecond.left-origin {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 37%;
+  background: #bbb;
+}
+
+.progress-barthird.left-origin {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 64%;
+  background: #bbb;
+}
+
+.dotone.manifested {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 65px;
+  background: rgba(159, 5, 231);
+}
+
+.dottwo.manifested {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 280px;
+  background: #bbb;
+}
+
+.dotthree.manifested {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 490px;
+  background: #bbb;
+}
+
+.dotfour.manifested {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  color: #fff;
+  line-height: 30px;
+  z-index: 9999;
+  left: 700px;
+  background: #bbb;
+}
+
+.progress-barfirst.manifested {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 10%;
+  background: #bbb;
+}
+
+.progress-barsecond.manifested {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 37%;
+  background: #bbb;
+}
+
+.progress-barthird.manifested {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 20px;
+  left: 64%;
+  background: #bbb;
+}
+
+.del-status {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: max-content;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 200px;
+  background-color: #fff;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.status {
+  background-color: #c8fad9;
+  color: #018b71;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ebf8f4;
+  width: max-content;
+  margin-left: 300px;
+  font-family: Roboto, sans-serif;
+  margin-top: -25px;
+}
+
+.status-text {
+  font-weight: bold;
+}
+
+.arrival-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrival-text {
+  align-self: flex-end;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.estimated-date {
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  margin-left: 32px;
+  font-size: x-large;
+}
+
+.more-details {
+  cursor: pointer;
+  color: #007bff;
+  font-family: Roboto, sans-serif;
+  margin-left: 300px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 5px;
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.arrow.down {
+  border-top: 5px solid #007bff;
+}
+
+.arrow.up {
+  border-bottom: 5px solid #007bff;
+}
+
+.extra-details {
+  margin-top: 10px;
+  margin-left: 32px;
+  font-family: Roboto, sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (min-width:1300px) {
+
+  .independent-image {
+    /* Add your image styling here */
+    width: 650px; /* Adjust the width as needed */
+    height: 650px; /* Adjust the height proportionally */
+    margin-left:75px;
+    margin-top: -50px;
+    z-index: -500;
+    background-color: transparent;
+  }
+  
+  .ttext-container {
+    padding-left: 20px; /* Adjust as needed */
+    margin-top: 0px;
+    
+  }
+  
+  .tadd {
+    font-family: Archivo;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 80px;
+    z-index: 500;
+    display: none;
+  }
+  
+  .tmain-heading {
+    color: #9f05e7;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue,
+      Noto Sans, Liberation Sans, Arial, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    flex-wrap: nowrap;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+  }
+  
+  
+  .tsub-heading {
+    color: #191919;
+    font-family: Archivo;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    position: absolute;
+    margin-top: 95px;
+  }
+  
+  .tbox-container {
+    margin-top: 20px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 1px 4px 13.6px 0px rgba(0, 0, 0, 0.25);
+    height: 425px;
+    margin-top: 125px;
+    width: 475px;
+    margin-left: 70px;
+  }
+  
+  .tbox-heading {
+    color: #2e2d2d;
+    font-family: Roboto, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 40px;
+  }
+  
+  .tbox-line {
+    height: 2.5px; /* Set the height of the line */
+    background-color: #959393; /* Adjust the color */
+    margin: 20px 0; /* Adjust the margin */
+    width: 90%; /* Full width line */
+  }
+  
+  .tbox-subheading {
+    color: #191919;
+    margin-top: 120px;
+    margin-left:0px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  
+  .tracking-input {
+    width: 360px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    padding: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #959393;
+    background: #fbfbfb;
+  }
+  
+  .track-button {
+    width: 360px; /* Adjust as needed */
+    height: 45px; /* Adjust as needed */
+    margin-bottom: 20px;
+    margin-top: 70px;
+    border-radius: 7px;
+    border: 1px solid #959393;
+    background: #9f05e7;
+    color: white;
+    font-family: Archivo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    /* Add other button styles */
+  }
+ 
+  .error-message {
+    color: red;
+    margin-left: 175px;
+  }
+
+  
+}
+
+

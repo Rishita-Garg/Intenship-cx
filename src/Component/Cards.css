@@ -1,0 +1,285 @@
+.cards-container {
+  background-image: 
+    linear-gradient(to bottom, #fff1f5, seashell), /* From top to middle */
+    linear-gradient(to bottom, seashell, #fff1f5); /* From middle to bottom */
+  background-position: top, bottom; /* Align the gradients */
+  background-size: 100% 50%; /* Set size for each gradient */
+  background-repeat: no-repeat; /* Prevent repetition */
+    padding: 5rem;
+    display: flex;
+    transform: translate(0,17%);
+    margin-top: 30px;
+
+  }
+  
+  .pincode-card{
+    border-radius: 40px;
+    background-size: cover;
+    width: 40vw;
+    height: 350px;
+    margin-right: 5rem;
+  }
+  .rate-calc-card {
+    border-radius: 40px;
+    background-size: cover;
+    width: 40vw;
+    height: 350px;
+    
+  }
+  
+  .pincode-card {
+    background-image: url('../assets/pincodeImage1.png');
+    margin-bottom: 3rem;
+  }
+  
+  .rate-calc-card {
+    background-color: rgb(94, 79, 193);
+    background-image: url('../assets/RateCalcImg.png');
+    margin-bottom: 0;
+  }
+  
+  .ratecardtitle-container {
+    margin: 1.5rem 3rem;
+  }
+  .pincardtitle-container {
+    margin: 1.5rem 3rem;
+  }
+  
+  .pincardtitle {
+    font-weight: 750;
+    font-size: 44.904px;
+    color: #0E0E0E;
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+  }
+  
+  .pincardsubtitle {
+    font-weight: 750;
+    font-size: 44.904px;
+    color: #902FC6;
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+    text-transform: capitalize;
+  }
+  .ratecardtitle {
+    font-weight: 650;
+    font-size: 44.904px;
+    color: rgb(255, 255, 255);
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+  }
+  
+  .ratecardsubtitle {
+    font-weight: 650;
+    font-size: 44.904px;
+    color: #ffffff;
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+  }
+  
+  .location-icon {
+    width: 300px;
+    height: 300px;
+    margin-left: 19rem;
+    margin-top: -6rem;
+  }
+  
+  .pincarddescription {
+    color: #000000;
+    font-family: Archivo;
+    font-size: 14.904px;
+    font-weight: 400;
+    letter-spacing: 2.245px;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+    margin-top: -12.5rem;
+    width:300px;
+  }
+  
+  .pincardbutton {
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background-color: #902FC6;
+    color: white;
+    height: 40px;
+    width: 200px;
+    margin-left: 3rem;
+  }
+
+  .ratecarddescription {
+    color: #000000;
+    font-family: Archivo;
+    font-size: 14.904px;
+    font-weight: 400;
+    letter-spacing: 2.245px;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+    width: 340px;
+  }
+  
+  .ratecardbutton {
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    border: 0.937px solid #FFF;
+    background-image: linear-gradient(to right, rgba(68, 81, 201, 1) 0%, rgba(112, 61, 196, 1) 100%);
+    box-shadow: 6.557px 3.747px 9.18px 0px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 200px;
+    margin-left: 3rem;
+    color: white;
+  }
+ 
+  .arrow-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 18rem;
+    margin-left: -7rem;
+  }
+  
+  
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center;
+    margin-top: -250px;
+  }
+
+  .pincode-card{
+    width: 90vw; /* Adjust width for mobile screens */
+    height: 250px;
+    margin-left: 5rem;
+    margin-bottom: 2rem; /* Add margin between stacked cards */
+  }
+
+  .rate-calc-card{
+    width: 90vw; /* Adjust width for mobile screens */
+    height: 250px;
+    margin-bottom: 0rem; /* Add margin between stacked cards */
+  }
+
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .pincardtitle {
+    font-weight: 750;
+    font-size: 28px;
+    color: #0E0E0E;
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+    margin-left: -2rem;
+  }
+  
+  .pincardsubtitle {
+    font-weight: 750;
+    font-size: 28px;
+    color: #902FC6;
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+    text-transform: capitalize;
+    margin-left: -2rem;
+  }
+  .ratecardtitle {
+    font-weight: 750;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+    margin-left: -2rem;
+  }
+  
+  .ratecardsubtitle {
+    font-weight: 750;
+    font-size: 28px;
+    color: #ffffff;
+    font-family: Archivo;
+    letter-spacing: 2.245px;
+    text-transform: capitalize;
+    margin-left: -2rem;
+  }
+  
+  .location-icon {
+    width: 300px;
+    height: 300px;
+    margin-left: 11rem;
+    margin-top: -9rem;
+  }
+  
+  .pincarddescription {
+    color: #000000;
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: -10.5rem;
+    width:200px;
+  }
+  
+  .pincardbutton {
+    align-self: center;
+    margin-top: 0rem;
+    margin-left: 1rem;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background-color: #902FC6;
+    color: white;
+    height: 35px;
+    width: 150px;
+  }
+
+  .ratecarddescription {
+    color: #ffffff;
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    width:300px;
+  }
+  
+  .ratecardbutton {
+    align-self: center;
+    margin-top:0rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    border: 0.937px solid #FFF;
+    background-image: linear-gradient(to right, rgba(68, 81, 201, 1) 0%, rgba(112, 61, 196, 1) 100%);
+    box-shadow: 6.557px 3.747px 9.18px 0px rgba(0, 0, 0, 0.25);
+    height: 35px;
+    width: 150px;
+    margin-left: 1rem;
+    color: white;
+  }
+}
+
+@media (min-width:1300px) {
+
+  .cards-container {
+    margin-top: 125px;
+  }
+
+  .location-icon {
+    width: 300px;
+    height: 300px;
+    margin-left: 22.5rem;
+    margin-top: -7rem;
+  }
+
+
+}

@@ -1,0 +1,344 @@
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+
+.relative {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 50px; /* Adjust this value to position the text above the rectangle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.gradient-text-top {
+  background: linear-gradient(90deg, #760cc9, #d66904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: xx-large;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #760cc9, #d66904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-right: 10px; /* Space between "Express" and "Rate Calculator" */
+}
+
+.rc-text {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: gray;
+}
+
+.rectangle {
+  width: 1200px;
+  height: 700px;
+  background-color: rgb(248, 240, 247);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Add some padding for better text placement */
+  text-align: center;
+  position: relative;
+  margin-bottom: 300px;
+  margin-top: 100px;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5rem; /* Adds a 5rem gap between the items */
+  height: 500px; /* Adjust the height as needed */
+  margin: 20px 20px 0 30px;
+  position: relative; /* Ensure relative positioning for absolute placeholders */
+}
+
+.input-container {
+  position: relative;
+  width: 300px; /* Match the width of the input divs */
+}
+
+.placeholder-text {
+  position: absolute;
+  top: -20px; /* Adjust this value to position the placeholder text above the input */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px; /* Adjust the font size as needed */
+  color: black; /* Placeholder text color */
+  text-align: left;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.origin-pincode,
+.del-pincode,
+.wt{
+  width: 250px;
+  background-color: rgb(223, 225, 230);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  margin-left: 10px;
+  margin-top: 20px; /* Adds a 20px margin at the top of each div */
+}
+
+
+.ht,
+.length,
+.width,
+.qt{
+  width: 150px;
+  background-color: rgb(223, 225, 230);
+  border-radius: 20px;
+  margin-left: -50px;
+  margin-top: 20px; /* Adds a 20px margin at the top of each div */
+} 
+
+.origin-pincode input[type="text"],
+.del-pincode input[type="text"],
+.qt input[type="number"],
+.ht input[type="text"],
+.wt input[type="text"],
+.length input[type="text"],
+.width input[type="text"],
+.total-qt input[type="number"] {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(223, 225, 230);
+  font-size: large;
+  font-weight: normal;
+}
+
+.button {
+  width: 300px;
+  background: linear-gradient(180deg, #a030de, #5d1586);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 20px; /* Adds a 20px margin at the top of each div */
+  height: 60px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #5d1586, #a030de);
+}
+
+.top-image1 {
+  width: 700px;
+  height: 500px;
+  margin-top: -900px;
+  margin-left: 650px;
+}
+
+.top-image3 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-container-top {
+  position: absolute;
+  top: 100px; /* Adjust this value to position the text above the rectangle */
+  display: flex;
+  flex-direction: column; /* Ensure the text and button are stacked vertically */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items to the left */
+  width: 100%;
+  margin-left: 100px;
+}
+
+.gradient-text-exp {
+  background: linear-gradient(90deg, #760cc9, #d66904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: -10px;
+  margin-right: 10px; /* Space between "Express" and "Rate Calculator" */
+}
+
+.text-top1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: black;
+  margin-top: -65px;
+  margin-left: 325px;
+}
+.text-top3 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: black;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 450px;
+}
+.text-top2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: black;
+  padding-top: -5px;
+  margin-top: 0px;
+  padding-left: 4px; /* Use padding instead of margin to avoid moving the button */
+  width: 300px;
+  height: 100px;
+}
+
+.button-top {
+  width: 250px;
+  background: linear-gradient(180deg, #a030de, #5d1586);
+  border-radius: 20px;
+  border: 0px transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 30px; /* Adjust this value if necessary */
+  height: 60px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-left: 0; /* Reset margin-left */
+}
+
+.button-img {
+  width: 100px;
+  height: 80px;
+  margin-top: 10px;
+  margin-right: -60px; /* Adjust the space between image and text */
+}
+
+.button-top:hover {
+  background: linear-gradient(180deg, #5d1586, #a030de);
+}
+
+.bottom-section {
+  margin-top: 450px;
+}
+
+.gradient-text-result {
+  background: linear-gradient(90deg, #760cc9, #d66904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: bolder;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+.text-result1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+  padding-top: 15px;
+  
+  align-items: center; 
+
+}
+.text-result2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+ padding-top: 15px;
+  align-items: center; 
+
+}
+
+@media (max-width: 1000px) {
+  .rectangle {
+    width: 600px;
+    height: 1500px;
+    margin-top: 1650px;
+  }
+  .text-container {
+    position: absolute;
+    top: 1550px; /* Adjust this value to position the text above the rectangle */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 37px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .input-container {
+    width: 100%; /* Adjust width to be responsive */
+    margin-top: 20px;
+  }
+
+  .placeholder-text {
+    position: absolute;
+    top: -10px; /* Adjust this value to position the placeholder text above the input */
+    left: 0;
+    transform: none;
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: normal;
+    color: black; /* Placeholder text color */
+    text-align: left;
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .origin-pincode,
+  .del-pincode,
+  .qt,
+  .ht,
+  .wt,
+  .length,
+  .width,
+  .total-qt,
+  .button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

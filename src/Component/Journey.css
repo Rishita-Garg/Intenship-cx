@@ -1,0 +1,96 @@
+#journey {
+    padding: 50px 0;
+  }
+  
+  #journey .container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-holder {
+    position: relative;
+  }
+  
+  .path-holder {
+    position: relative;
+  }
+  
+  .year-box {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .year-box .text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .year-box .text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .year-box .text h4 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .year-box .logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .year-box .logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .year-box .logo-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .year-box .logo-holder small {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .path-holder svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 5px;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .year-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .year-box .text {
+      padding-right: 0;
+      margin-bottom: 10px;
+    }
+    .year-box .logo {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

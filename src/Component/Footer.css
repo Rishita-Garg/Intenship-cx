@@ -1,0 +1,188 @@
+.footer {
+  color: #ffffff;
+  padding: 20px; /* Reduced padding */
+  font-family: 'Roboto', sans-serif;
+  background-color: indigo; /* Indigo background */
+  height: 250px; /* Reduced height */
+    position: relative;
+ /* Ensure the pseudo-elements are contained */
+  z-index: -1;
+}
+.footy {
+  position: relative; /* Ensure relative positioning */
+  background-color: indigo; /* Indigo background */
+}
+.gap{
+  height: 50px;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the parent */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+.footer {
+  /* Add your existing styles for the footer */
+  position: relative; /* Ensure relative positioning */
+  z-index: 1; /* Ensure it's above the overlay */
+
+}
+
+
+.footer::before {
+  content: '';
+  position: relative;
+  top: -50px; /* Move it up to cover the top part */
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjusted height */
+  background-color: indigo; /* Indigo top curve */
+  border-radius: 50% 50% 0 0; /* Adjusted border-radius */
+  transform: scaleY(0.6) translateX(50%); /* Scale and translate to form crescent moon */
+  transform-origin: 0 0; /* Set the transform origin */
+  z-index:1;
+}
+
+/* White Rectangle Overlay */
+.footer-overlay {
+  position: top;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Height of the overlay */
+  background-color: white; /* White color */
+  border-radius: 0 0 50px 50px; /* Rounded downward corners */
+  z-index: 200; /* Ensure it's above the footer content */
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Reduced gap */
+  align-items: center;
+  font-size: 25px; /* Increased the icon size */
+  margin-left:190px ;
+}
+
+.social-icon {
+  color: white; /* Pure indigo color */
+}
+
+.Address{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-bottom::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.footer-bottom::after {
+  content: '© 2024 Campus Express. All rights reserved.';
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section-logo {
+  top: auto;
+}
+
+.footer-section-contact {
+  text-align: right;
+  margin-top: -20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: max-content;
+    border-radius: 0;
+  }
+  
+  .Address{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Reduced gap */
+    align-items: center;
+    font-size: 25px; /* Increased the icon size */
+    margin-left:80px ;
+    margin-top: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+    
+    margin-left: 10px;
+  }
+
+  .footer-section-contact {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  
+}
+
+.footer-bottom::before {
+  content: '';
+  display: block;
+  width: 45%;
+  height: 1px;
+  background-color: white;
+  margin-top: 35px;
+}
+
+.footer-bottom::after {
+  content: '© 2024 Campus Express. All rights reserved.';
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
